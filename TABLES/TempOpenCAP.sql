@@ -1,0 +1,17 @@
+CREATE TABLE "Open_CAP" (
+  "ID" NUMBER GENERATED ALWAYS AS IDENTITY MINVALUE 1 MAXVALUE 99999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER NOCYCLE NOKEEP NOSCALE NOT NULL ENABLE,
+  "name_qc_unit" VARCHAR2(4000),
+  "address_qc_unit" VARCHAR2(4000),
+  "address_city_qc_unit" VARCHAR2(4000),
+  "look_up_fields" VARCHAR2(4000),
+  "case" VARCHAR2(4000),
+  "form_date" DATE,
+  "mail_address" VARCHAR2(4000),
+  "review" NUMBER,
+  "apid" NUMBER,  
+  "dear_case" VARCHAR2(4000),
+  "stament_text" VARCHAR2(4000),
+  "QUALITY_CNTRL_SUPER" VARCHAR2(4000),
+  "QC_Reviewer_Phone" VARCHAR2(4000),  
+  PRIMARY KEY ("ID") USING INDEX ENABLE
+);
