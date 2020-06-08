@@ -1,0 +1,23 @@
+CREATE TABLE "TempEDSAPWavier" (
+  "ID" NUMBER GENERATED ALWAYS AS IDENTITY MINVALUE 1 MAXVALUE 99999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER NOCYCLE NOKEEP NOSCALE NOT NULL ENABLE,
+  "Lookup_Fields" VARCHAR2(4000),
+  "rev_number" VARCHAR2(4000),
+  "rev_month" VARCHAR2(4000),
+  "cert_period" VARCHAR2(4000),
+  "QC_Reviewer" VARCHAR2(4000),
+  "CASE_NAME" VARCHAR2(4000),
+  "apid" NUMBER,
+  "ssn" NUMBER,
+  "household" VARCHAR2(4000),
+  "date_status_changed" DATE,
+  "case_record_bv" NUMBER,
+  "EDSAP_BONUS_Value_QC" VARCHAR2(4000),
+  "EDSAP_ERROR_AMOUNT" VARCHAR2(4000),
+  "Type_of_review" VARCHAR2(4000),
+  "EDSAP_SNAP_Determination" VARCHAR2(4000),
+  "Procedural" NUMBER(1,0),
+  "client_eligibility" NUMBER(1,0),
+  "Source_of_the_active_error" CLOB,
+  "CAPER_Negative_Brief_description" CLOB,
+  PRIMARY KEY ("ID") USING INDEX ENABLE
+);
